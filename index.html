@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title> Test </title>
+        
+        <style type="text/CSS">
+        
+        @font-face {
+            font-family: Vitesse;
+            font-weight: bold;
+            src: url("./IndexResources/Vitesse-Light.otf") format("opentype");
+        }
+        
+        @font-face {
+            font-family: Amasis;
+            font-weight: light;
+            src: url("./IndexResources/Amasis.otf") format("truetype");
+        }
+        
+        </style>
+        
+        <style type="text/CSS">
+        
+            html {
+                height: 100%; min-width: 740px;
+                text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+            }
+            
+            body {
+                min-height: 580px;
+                margin: 0;
+                background: #07a6c9;
+                background: 
+                    -webkit-linear-gradient(top,
+                                            rgba(255,255,255,0.5),
+                                            rgba(255,255,255,0.0) 342px) no-repeat,
+                    url("./IndexResources/JeansyNoise2.png");
+            }
+            
+            .main_heading {
+                margin: 1em 0px 0.1em 0px;
+                font-weight: light;
+                text-align: center;
+                font-family: "Vitesse"
+            }
+            
+            .sub_header {
+                margin-bottom: 2em;
+                color: #7494aa;
+                text-align: center;
+                font-family: Arial;
+                font-family: "Amasis";
+                text-shadow: 0.1em 0.1em rgba(255,255,255,0.1);
+            }
+            
+            .table_warapper {
+                width: 720px;
+                margin: 0 auto
+            }
+            
+            .compare_table {
+                display: inline-block;
+                margin: auto 0px;
+                text-align: center;
+                font-family: "Amasis"
+            }
+            
+                .compare_table th {
+                    padding-bottom: 0.7em;
+                    color: #8d1010;
+                    font-size: 1.1em
+                }
+            
+                .compare_table td {
+                    padding: 1em 50px 1em 50px;
+                }
+            
+            .imgflare { box-shadow: 0px 0px 800px #fff }
+            
+            .hr_top {
+                width: 700px;
+                margin: 0 auto 2em auto;
+                border: none;
+                border-top: solid rgba(0,0,0,0.3) 1px;
+                border-bottom: solid rgba(255,255,255,0.3) 1px;
+            }
+            
+            .footer {
+                height: 40px; width: 100%;
+                margin-top: 2em;
+                padding-top: 1em;
+                margin: 0;
+                background-color: rgba(0,0,0,0.57); color: #cfebff;
+                font-size: 1.2em;
+                text-align: center;
+                font-family: "vitesse";
+                text-shadow: 0.1em 0.1em rgba(0,0,0,0.4);
+            }
+            
+            .footer {
+                position: absolute;
+                bottom: 0
+            }
+            
+            @media screen and (max-height: 620px) { 
+                .footer {
+                    position: absolute;
+                    bottom: inherit; top: -2em
+                }
+            
+                .main_heading { margin: 2.5em 0px 0.1em 0px }
+            }
+            
+            @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) { 
+                .footer {
+                    position: absolute;
+                    bottom: inherit; top: -2em
+                }
+            
+                .main_heading { margin: 2.5em 0px 0.1em 0px }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="main_heading">Let's Compare</h1>
+        
+        <div class="sub_header">(web graphics on Retina Screens)</div>
+        
+        <hr class="hr_top"/>
+        
+        <div class="table_warapper">
+            <table class="compare_table">
+                <tbody>
+                    <tr>
+                        <th>PNG</th>
+                        <th>SVG</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img  src="./IndexResources/testRound.png" height="260" width="260" alt="image in png"/>
+                        </td>
+                        <td>
+                            <img  src="./IndexResources/testRound.svg" height="260" width="260" alt="image in svg"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            49 KB
+                        </td>
+                        <td>
+                            4 KB
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer"> Both images were created at 520x520 resolution and displayed at 260x260.
+    </body>
+</html>
